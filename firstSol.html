@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve All Question</title>
+</head>
+<body>
+    <script>
+        // question 1.Create a function that takes two numbers as arguments and returns their sum. Examples  addition(3, 2) ➞ 5 addition(-3, -6) ➞ -9
+        
+        function sum(n1, n2){
+            return n1+n2;
+        }
+       console.log(sum(3,2)); 
+        console.log(sum(-3,-6)); 
+
+        // question 2. Write a function that takes an integer minutes and converts it to seconds. Examples  convert(5) ➞ 300 convert(3) ➞ 180
+
+    //     function convert(minutes){
+    //         return minutes*60;
+        // }
+    //    console.log(convert(5));
+    //    console.log(convert(3));
+
+    let convert=(minutes)=> {return minutes*60}
+    console.log(convert(5));
+    console.log(convert(3));
+
+  
+
+
+        // question 3. Create a function that takes a number as an argument, increments the number by +1 and returns the result. Examples  addition(0) ➞ 1 addition(9) ➞ 10
+
+        function adition(int){
+            return int+1;
+        }
+        console.log(adition(0));
+        console.log(adition(9));
+
+        
+        //  question4 Write a function that takes the base and height of a triangle and return its area. Examples >> triArea(3, 2) ➞ 3 triArea(10, 10) ➞ 50
+
+        function triArea(b,h){
+            const area =b*h/2;
+            return area;
+        }
+        console.log(triArea(3,2));
+        console.log(triArea(10, 10));
+
+        // question 5 Create a function that takes the age in years and returns the age in days>>>calcAge(0) ➞ 0 calcAge(20) ➞ 7300
+
+        function calcAge(age){
+             return age *365;
+        }
+        console.log(calcAge(0));
+        console.log(calcAge(20));
+
+        // question 6 Create a function that takes an array containing only numbers and return the first element. Examples  getFirstValue([1, 2, 3]) ➞ 1 getFirstValue([80, 5, 100]) ➞ 80
+
+        // function getFirstValue(array){
+        //     return array[0];
+        // }
+        // console.log(getFirstValue([80, 5, 100]));
+        // console.log(getFirstValue([1, 2, 3]));
+          
+        // qiestion 7 Create a function that takes voltage and current and returns the calculated power. Examples  circuitPower(23, 10) ➞ 230 circuitPower(110, 3) ➞ 330
+
+        // function circuitPower(voltage,current){
+        //     power=voltage*current; 
+        //      return power;
+        // }
+        // console.log(circuitPower(23, 10));
+        // console.log( circuitPower(110, 3));
+
+        // question 8 Write a function that converts hours into seconds. Examples howManySeconds(2) ➞ 7200 howManySeconds(10) ➞ 36000
+
+         function howManySeconds(hour){
+            return hour*60*60;
+         }
+         console.log(howManySeconds(2));
+         console.log(howManySeconds(10));
+
+        //  question 9 There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value. Examples  remainder(1, 3) ➞ 1 remainder(5, 5) ➞ 0
+
+        //  function remainder(n1,n2){
+        //     return n1%n2;   
+        //  }
+        //  console.log(remainder(1, 3));
+        //  console.log(remainder(5, 5));
+
+        //  question 10  Create a function that takes length and width and finds the perimeter of a rectangle.
+
+        // function  findPerimeter(length,width) {
+        //     return 2*(length+width);
+        //     }
+        // console.log(findPerimeter(6, 7));
+        // console.log(findPerimeter(20, 10));
+    </script>
+</body>
+</html>
