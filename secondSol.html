@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solutionSet-2</title>
+</head>
+<body>
+    
+
+    <script>
+    //     <!-- question 1 -->
+    // <!-- Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+    // Examples 👇
+    // lessThanOrEqualToZero(2) ➞ false
+    // lessThanOrEqualToZero(0) ➞ true
+    // lessThanOrEqualToZero(-7) ➞ true -->
+        function lessThanOrEqualToZero(number){
+            if(number<=0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(lessThanOrEqualToZero(2));
+        console.log(lessThanOrEqualToZero(0));
+        console.log(lessThanOrEqualToZero(-7));
+
+        // question-2
+        // Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+        // Examples 👇
+        // lessThan100(22, 15) ➞ true // 22 + 10 = 32
+        // lessThan100(83, 34) ➞ false // 80 + 40 = 120
+
+        function lessThan100(n1,n2){
+            if(n1+n2<100){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+        console.log(lessThan100(22, 15));
+        console.log(lessThan100(83, 34));
+
+        // question-3
+        // It is not returning the right values. Can you help him fix it?
+        // a = 10
+        // b = 20
+        // a, b = swap(a, b)
+        // print(a, b) // Should print out "20, 10", but the function prints out "10, 10" Examples 👇
+        // swap(10, 20) ➞ [20, 10]
+
+        // fisrt method 
+          let a=25;
+          let b=10;
+            a=a+b; //25+10=35
+            b=a-b;  //35-10=25---b
+            a=a-b; //35-25=10---a
+          console.log(a,b);
+
+        //   questio-4
+        // In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:chickens = 2 legs,cows = 4 legs and pigs = 4 legs
+
+        function animals(x,y,z){
+            x=x*2;
+            y=y*4;
+            z=z*4;
+            // The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+            return x+y+z;
+        }
+        console.log(animals(2, 4, 5)); //2*2+4*4+4*5 =40
+        console.log(animals(1, 2, 3) );//2*1+2*4+3*4=22 
+
+
+        // question-5
+        function and(a,b){
+             if (a && b) {
+                return true;
+             }else{
+                return false;
+             }
+         }
+         console.log(and(true, false));
+         console.log(and(true, true));
+          console.log(and(false, true));
+          console.log(and(false, false));
+
+        //  question 6
+        // Create a function that returns true when num1 is equal to num2; otherwise return false.
+        function isSameNum(num1, num2){
+            if(num1===num2){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(isSameNum(2, 6));
+        console.log(isSameNum(4, 4) );
+        console.log(isSameNum(2, "2"));
+
+        // question 7
+        // Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+        // wins get 3 points
+        // draws get 1 point
+        // losses get 0 points
+
+        function footballPoints(wins, draws , losses){
+            wins=wins*3;
+            draws=draws*1;
+            losses=losses*0;
+             return wins+draws+losses;
+
+        }
+        console.log(footballPoints(2, 4, 2));
+        console.log(footballPoints(5, 0, 2));
+
+        // question 8
+        // In this challenge, you must verify the equality of two different values given the parameters a and b.
+        // Both the value and type of the parameters need to be equal. The possible types of the given parameters are:Numbers,Strings,Booleans (false or true),Special values: undefined, null and NaN
+        // Implement a function that returns true if the parameters are equal, and false if they are not.
+
+        function checkEquality(a,b){
+            if (a===b) {
+               return true; 
+            }else{
+                return false;
+            }
+        }
+        console.log(checkEquality(1, true));
+        console.log(checkEquality(0, "0") );
+        console.log(checkEquality(1, 1));
+
+        // question 9
+        function profitableGamble(prob, prize, pay ){
+            if (prob * prize > pay) {
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(profitableGamble(0.2, 50, 9));
+        console.log(profitableGamble(0.9, 1, 2) );
+        console.log(profitableGamble(0.9, 3, 2));
+
+        // question 10
+         function calculator(i){
+          return eval(i);
+         }
+         console.log(calculator("20+4"));
+         console.log(calculator("5-4"));
+    </script>
+</body>
+</html>
