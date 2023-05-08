@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:wght@400;500&family=Poppins:wght@300&family=Roboto:ital,wght@1,300;1,400&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bodyColor:#fff;
+    --btnBgColor:#146C94;
+    --abx:#569DAA;
+    
+}
+body{
+    background-color: var(--bodyColor);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+   font-family: 'Montserrat', sans-serif;
+}
+.todoListBox{
+    background: var(--abx);
+    height: 20rem;
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 2px 10px 10px var(--btnBgColor);
+}
+h1{
+    padding: 1rem;
+    color: var(--abx);
+}
+#todoTxtBar{
+    outline: 0;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 2px 1px 0.5px var(--btnBgColor);
+}
+#todoPlusSign{
+    background: var(--btnBgColor);
+    color: #fff;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    box-shadow: 0.5px 1px 2px var(--bodyColor);
+    cursor: pointer;
+    border: none;
+}  
+#todoPlusSign:hover{
+    background:var(--abx);
+    color: black;
+}
+#todoTextArea{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+   
+}
+li{
+    list-style: none;
+    color: #fff;
+}
