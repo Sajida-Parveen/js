@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: rgb(202, 232, 154);
+    /* opacity: 0.5; */
+}
+.demo{
+    background: rgb(41, 57, 104);
+    font-family: sans-serif, Verdana, sans-serif;
+}
+ .heading{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;   
+    text-decoration: underline;
+    padding: 20px;
+ }
+ .counter{
+     background:rgb(41, 57, 104);;
+     height: 10rem;
+     width:30rem;
+     margin-top: 100px;
+     text-align: center;
+     position: relative;
+     left: 35%;
+    
+     box-shadow: 0 0 15px gray ;
+}
+ #count{
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+ }
+ #startBtn, #stopBtn{
+     background: rgb(202, 232, 154);
+     color: white;
+     font-weight: bold; 
+     margin: 8px;
+     margin-top: 20px;
+     padding: 15px 15px;
+     font-size: 30px;
+     outline: none;
+     border: none;
+     border-radius: 10px;
+ }
+ #startBtn:hover, #stopBtn:hover{
+     opacity: 0.5;
+     cursor: pointer;
+ }
