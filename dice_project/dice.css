@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color:#FFF9DE;
+    color: #7AA874;
+}
+.heading1{
+    font-size: 5rem;
+    font-style: italic;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.dice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dice{
+    padding: 3rem;
+}
+img{
+    height: 200px;
+}
+.player{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+footer{
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
