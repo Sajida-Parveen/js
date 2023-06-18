@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primary:rgb(49, 74, 201);
+}
+.container{
+    background-color:#ACB1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height:100vh;
+}
+h2{
+    font-size: 3rem;  
+    padding: 1rem;
+    color: var(--primary);
+    text-align: center;
+}
+.textMenu{
+    padding: 1rem;
+    width: 20rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 20px rgb(67, 74, 80);
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+.row{
+    background:black ;
+    padding: 2rem 2rem 4rem;
+}
+.add{
+    padding: 1rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 1s all ease;
+
+}
+.add:hover{
+    background-color:var(--primary); 
+    color: white;
+    cursor: pointer;
+}
+.list-item{
+    margin-top: 10px;
+}
+.list-item li{
+    list-style: none;
+    color: black;
+    background: white;
+    text-transform: uppercase;
+    justify-content: space-around;
+    position: relative;
+    padding: 1rem;
+    margin-top: 10px;
+
+}
+.list-item li i{
+    position: absolute;
+    right: 1rem;
+    transition: .2s all ease-in;
+}
+.list-item li i:hover{
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+@media (max-width:640px) {
+    .textMenu{
+        width: 12rem;
+    }
+    
+}
