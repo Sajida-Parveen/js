@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1:hwb(240 7% 63%)   ;
+    --color2:rgb(8, 54, 8);
+}
+.counter-head{
+    text-align: center;
+    font-size: 50px;
+    background: var(--color1);
+    color: white;
+    padding: 30px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+
+}
+
+#form input{
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 10px gray;
+    border-radius: 20px;
+
+}
+#strtBtn:hover, #stopBtn:hover{
+    cursor: pointer;
+    background: var(--color2);
+    color: white;
+    transition: 1s;
+}

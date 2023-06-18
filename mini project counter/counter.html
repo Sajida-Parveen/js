@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="./css/counter.css">
+</head>
+<body>
+    <div class="contaier">
+        <h1 class="counter-head">THIS IS COUNTER</h1>
+        <form action="" id="form">
+            <input type="button" value="Start" id="strtBtn">
+            <input type="number" placeholder="Click start button" id="number">
+            <input type="button" value="Stop" id="stopBtn">
+        </form>
+
+    </div>
+    <script>
+        let startBtn=document.querySelector("#strtBtn");
+        let number=document.querySelector("#number");
+        let stopBtn=document.querySelector("#stopBtn");
+
+        let count;
+        let counterId;
+        let heading=document.querySelector(".counter-head");
+        startBtn.addEventListener("click", ()=>{
+            counterId=setTimeout(()=>{
+                heading.innerHTML="COUNTER START";
+                heading.style= 'background-color:green';
+
+            },2000);
+            stopBtn.addEventListener("click",()=>{
+                heading.innerHTML="COUNTER STOP";
+                heading.style= 'background-color:red';
+                clearTimeout(counterId);
+
+
+            });
+
+            
+
+        });
+        startBtn.addEventListener("click",()=>{
+            count=number.value;
+            counterId=setInterval(()=>{
+                count++;
+                number.value=count;
+            },2000);
+        });
+        stopBtn.addEventListener("click", ()=>{
+            clearInterval(counterId);
+        });
+
+    </script>
+</body>
+</html>
