@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+    <link rel="stylesheet" href="./css/stye.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1 id="heading">Check Prime Number Or Not</h1>
+   
+       <form action="" id="form">
+            <input type="number" name="" placeholder="Enter number" id="num">
+         <input type="button" id="btn" value="Check number" />
+        </form>
+    </div>
+        
+    <p class="result"></p>
+
+
+
+    <script>
+        function isPrime(num){
+            if(num<=1){
+                return false;
+            }
+            for(i=2; i< num; i++){
+                if(num%i===0){
+                    return false;
+                }
+                return true;
+            }
+            
+        }
+        // alert(isPrime(25));
+        let checkBtn=document.querySelector("#btn");
+        checkBtn.addEventListener("click", ()=>{
+            let num= document.querySelector("#num").value;
+            let result = document.querySelector(".result");
+        
+            if(isPrime(num)){
+                result.innerHTML=` ${num} is Prime Number `;
+            }else{
+                result.innerHTML=`${num} is Not a Prime Number`;
+            }
+
+        });
+    
+    </script>
+</body>
+</html>
