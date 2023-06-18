@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout </title>
+</head>
+<style>
+    .message{
+        text-align: center;
+        font-size: 50px;
+        background-color: green;
+        padding: 20px;
+        color: yellow;
+    }
+    .btn{
+        padding: 10px 15px;
+        margin-left: 45%;
+        font-size: 30px;
+        border: none;
+        background-color: green;
+        color: white;
+        box-shadow: 0 0 10px yellow;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1 class="message">HELLO</h1>
+    <button class="btn">Stop</button>
+
+    <script>
+        let msg= document.querySelector(".message");
+        let settimeId=setTimeout(()=>{
+                msg.innerHTML="Welcome to programming language.";
+                msg.style='color:red'; 
+                msg.style='background-color:blue';
+                
+            },3000);
+        document.querySelector(".btn").addEventListener("click",clrBtn);
+       function clrBtn(){
+            msg.innerHTML="Stop Message";
+            msg.style='color:white'; 
+                msg.style='background-color:red';
+            clearTimeout(settimeId);
+       }
+            
+            
+       
+        
+    </script>
+</body>
+</html>
