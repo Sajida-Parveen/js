@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.banner{
+    /* border: 2px solid black; */
+    overflow: hidden;
+    height: 25rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 1px 1px 8px black;
+    position: relative;
+}
+.slider{
+    /* background: red; */
+   height: 100%;
+   width: 100%;
+   transition: 1s;
+   position: absolute;
+}
+.btn{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+.btn button{
+    font-size: 2rem;
+    padding: 1rem;
+    width: 15rem;
+   
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+
+}
